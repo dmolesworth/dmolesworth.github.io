@@ -68,8 +68,10 @@
                     <div style="width: 90vw;margin-left: -45vw;" class="img-bg">
                             <img alt="Typical user journey of a CSA when completing a rate review on the phone with a customer" style="box-shadow: none;" src="images/blueprint.png" />
                     </div>
+                    <h2 id="">Building empthany</h2>
+                    <p>Advisor job satisfaction is extremely important to us. We want to ensure the tools they use are streamlined & easy to use so that they instantly feel comfortable when on the phone with customers. This helps them serve our customers quickly & efficiently. To achieve this, my squad runs a continuous discovery initiative in the support center, dedicating time each week to one-on-one and group sessions with CSAs to uncover problems and test ideas. </p>
                     <h2 id="">Discovery & focus areas</h2>
-                    <p>We began with a kickoff discovery workshop involving stakeholders from customer service, product, and engineering.</p>
+                    <p>We began with a kickoff discovery workshop involving stakeholders from customer service, product, and engineering. I used insights from initial discovery interviews to map out the processes involved with completing a rate review and asked participants to note down any pain points they had. I then grouped these into themed painpoints and plotted them on the user journey maps.</p>
                     <div style="width: 90vw;margin-left: -45vw;" class="img-bg">
                             <img alt="User flow with post it notes as a result of workshop exercise with product, customer service and engineering. Post it notes highliht, slow process, usability, validation, approval and customer frustration as key areas." style="box-shadow: none;" src="images/workshop.png" />
                     </div>
@@ -77,6 +79,16 @@
                     <div class="row"> <strong>Finding the best rates:</strong> The process of determining optimal rates for both customers and the business was cumbersome and inefficient. Advisors had to navigate multiple spreadsheets/systems, which added unnecessary complexity and negatively impacted the user experience. Our <strong>Hypothesis</strong> was that if we can simplify the the process of reviewing a customers rates, we'll reduce call time and improve eNPS.
                     </div>
                     <div class="row"> <strong>Note taking after the call:</strong> Advisors spent, on average, 45% of their time manually summarising calls. This resulted in inconsistent notes, ranging from extensive detail to minimal information and confusion and inefficiency in understanding prior interactions. Our <strong>Hypothesis</strong> was that if we can simplify the process of manually taking notes, we'd reduce the overall handling time of tickets 
+                    </div>
+                    <h2>Early iterations</h2>
+                    <p>Once we gathered the requirements for the data to be displayed, I experimented with various page layouts and table designs to present the datasets effectively. Our key design principle was to ensure users could quickly understand the data, enabling them to make timely rate amendment recommendations to the customer.</p>
+                     <div class="img-bg">
+                    <div class="img-detail-2">
+                        <img src="images/iteration1.png" />
+                    </div>
+                    <div class="img-detail-2">
+                        <img src="images/iteration2.png" />
+                    </div>
                     </div>
                     <h2 id="">Prototyping & testing</h2>
                     <p>To improve the process of <strong>finding the best rates</strong>, we conducted weekly discovery sessions with CSAs to validate hypotheses and gather feedback on prototypes. Key findings included:</p>
@@ -111,7 +123,7 @@
                     </div>
                     </div>
                     <p>We launched the first iteration of the tool to a small group of beta testers before rolling it out to the entire contact centre.</p>
-                    <blockquote>Part of our initial discovery and rollout research was to sit in on calls with customers to observe CSAs using the tool in a real setting.</blockquote>
+                    <blockquote>Part of our initial discovery and rollout research was to sit in on calls with customers to observe CSAs using the tool in a real setting. This allowed us to address points of friction quicker and with more confidence.</blockquote>
                     <div class="img-bg">
                         <div class="img-detail-2">
                         <img src="images/rate1.png" />
@@ -121,12 +133,11 @@
                     </div>
                     </div>
                      <h2 id="">Challenges</h2>
-                     <p>Rate plan packages were not used as expected, CSAs would often start with a custom plan because every customer is different and packages were too rigid.</p>
+                     <p>Rate plan packages were not used as expected, CSAs would often start with a custom plan because every customer is different and packages were too rigid. We decided to roll out an update to disable the package functionality, allowing CSAs to start with a completely custom plan, which also reduced the amount of noise on the page.</p>
                      <hr/>
                     <h2 id="">Introducing AI Call Summaries</h2>
                     <p>To tackle the note-taking problem, <strong>we explored leveraging AI to automate call summaries.</strong> We began by designing various summary formats, experimenting with combinations of headings, bold text, bullet points, and paragraphs to make the summaries clear and structured. These formats were tested with CSAs to identify the most effective approach.</p>
                     <p><img style="box-shadow: none;" src="images/before.png" /></p>
-                    <p><img style="box-shadow: none;" src="images/after.png" /></p>
 
                     <h2 id="">Implementation</h2>
                     <p>Using a large language model (LLM), we iterated on prompts to achieve the desired summary structure. Initially, we <strong>released this feature to 15 beta testers for feedback.</strong> Early issues included:</p>
@@ -140,7 +151,10 @@
                         <li>Refined prompts to clearly specify transcription boundaries.</li>
                         <li>Established a quality testing team to review random samples and ensure accuracy.</li>
                     </ul>
-                    <p><strong>Advisors were initially sceptical of the summaries and waited to review them, negating the time-saving benefits.</strong> Advocates within the contact centre helped promote trust in the tool but this also led us to enhance the feature to allow advisors to edit the summary before it was sent to Zendesk.</p>
+                    <p>Below is an example of the call summary that was automatically sent to the Zendesk ticket;</p>
+                    <p><img style="box-shadow: none;" src="images/after.png" /></p>
+                    <h2 id="">Iterating</h2>
+                    <p><strong>Advisors were sceptical of the summaries and waited to review them, negating the time-saving benefits.</strong> Advocates within the contact centre helped promote trust in the tool but this also led us to enhance the feature to allow advisors to edit the summary before it was sent to Zendesk.</p>
                     <ul>
                         <li>The modal below would appear as an overlay on the screen once the call with the customer had ended.</li>
                         <li>CSAs were able to edit the AI call summarisation before it was posted on the ticket in Zendesk. It allowed the CSA to add any detail the AI might have missed.</li>
