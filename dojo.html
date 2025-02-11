@@ -81,7 +81,7 @@
                     <div class="row"> <strong>Note taking after the call:</strong> Advisors spent, on average, 45% of their time manually summarising calls. This resulted in inconsistent notes, ranging from extensive detail to minimal information and confusion and inefficiency in understanding prior interactions. Our <strong>Hypothesis</strong> was that if we can simplify the process of manually taking notes, we'd reduce the overall handling time of tickets 
                     </div>
                     <h2>Early iterations</h2>
-                    <p>Once we gathered the requirements for the data to be displayed, I experimented with various page layouts and table designs to present the datasets effectively. Our key design principle was to ensure users could quickly understand the data, enabling them to make timely rate amendment recommendations to the customer.</p>
+                    <p>Once we gathered the requirements for the data to be displayed, I experimented with various page layouts and table designs to present the datasets effectively. Our key design principle was to ensure users could quickly understand the data, enabling them to make timely rate amendment recommendations to the customer. To help achieve this, we focused on simplifying information hierarchy, reducing cognitive load with pre-populated rate options, and surfacing key data at a glance.</p>
                      <div class="img-bg">
                     <div class="img-detail-2">
                         <img src="images/iteration1.png" />
@@ -93,7 +93,7 @@
                     <h2 id="">Prototyping & testing</h2>
                     <p>To improve the process of <strong>finding the best rates</strong>, we conducted weekly discovery sessions with CSAs to validate hypotheses and gather feedback on prototypes. Key findings included:</p>
                     <ul>
-                        <li>Advisors struggled to digest the large amounts of data presented.</li>
+                        <li><strong>Advisors struggled to digest the large amounts of data presented.</strong> So we redesigned the layout to prioritize the most critical rate data upfront, reducing visual clutter and introducing better hierarchy for easier scanning.</li>
                         <li>Advisors often relied on zooming and keyboard shortcuts in spreadsheets, highlighting the importance of this functionality in the tool.</li>
                     </ul>
                     <p>We focused on improving usability by addressing these points.</p>
@@ -154,12 +154,15 @@
                     <p>Below is an example of the call summary that was automatically sent to the Zendesk ticket;</p>
                     <p><img style="box-shadow: none;" src="images/after.png" /></p>
                     <h2 id="">Iterating</h2>
-                    <p><strong>Advisors were sceptical of the summaries and waited to review them, negating the time-saving benefits.</strong> Advocates within the contact centre helped promote trust in the tool but this also led us to enhance the feature to allow advisors to edit the summary before it was sent to Zendesk.</p>
+                    <p>Advocates within the contact centre helped promote trust in the tool but advisors were sceptical of the summaries and waited to review them in Zendesk, negating the time-saving benefits.</p>  
+                    <strong>Iteration</strong>
+                        <p>This led us to enhance the feature to allow advisors to edit the summary before it was sent to Zendesk.</p>
                     <ul>
                         <li>The modal below would appear as an overlay on the screen once the call with the customer had ended.</li>
                         <li>CSAs were able to edit the AI call summarisation before it was posted on the ticket in Zendesk. It allowed the CSA to add any detail the AI might have missed.</li>
                     </ul>
-                    
+                    <strong>Outcome</strong>
+                    <p>Adoption increased as CSAs gained confidence in the AI summaries.</p>
                     <div class="img-bg">
                         <div class="img-detail-2">
                         <img style="border-radius: 16px; width:450px; float: right;" src="images/aihelp.png" />
@@ -172,9 +175,10 @@
                     <p><strong>AI as an Assistant, Not a Replacement:</strong> Human intervention was still necessary when the LLM produced incorrect summaries.</p>
                     <p><strong>Behavioural changes:</strong> CSAs flagged missing details but accepted that the AI captured the most critical aspects of calls. However, some advisors adjusted their speech to ensure certain points were included in the summary.</p>
                     <hr/>
-                    <h2 id="">Impact</h2>
+                    <h2 id="">Overall impact</h2>
                     <div class="row">Reduction in call time of 33% (14 mins)</div>
                     <div class="row">eNPS score of +80</div>
+                    <p>The redesign streamlined the rate review process, contributing to a 33% reduction in call time. Additionally, feedback from CSAs indicated that the new workflow improved confidence and efficiency, reflected in the +80 eNPS score.</p>
                     <p>As well as tracking quantative metrics around call time, we also gathered qualatative data in the form of follow up interviews and a survey(employee NPS) before and after the feature roll out to ensure there was no negative impact to their experience.</p>
                     <blockquote>“this makes life so much easier for people like me who have ADHD and struggle with quick processing when reading/writing”</blockquote>
                     <p>The simplification of reviewing a customer's rates, plus the removal of the need to take notes allowed advisors to be present with our customers. Using active listening means they can help a customer much faster and respond better.</p>
