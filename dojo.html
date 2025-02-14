@@ -52,8 +52,10 @@
             <div class="post">
                 <article class="post-content">
                     <h1 id="">Improving support experience</h1>
-                    <h3>At Dojo, my product team is dedicated to enhancing the efficiency and experience of customer support. This particular project focused on addressing challenges faced when customers contacted Dojo to dispute invoice amounts and request lower rates.</h3>
-                    <blockquote> As a result of this work, we won <a href="https://www.linkedin.com/posts/dojo-tech_customerservice-lifeatdojo-awards-activity-7267576580657364993-IBqc?utm_source=share&utm_medium=member_desktop" target="_blank">Gold at the European Contact Centre & Customer Service Awards (ECCCSA)</a> for the <strong>Greatest Impact of AI!</strong> 🎉</blockquote>
+                    <h3>Developing a tool within our internal web platform to streamline how customer service agents (CSAs) handle customer requests for their rates to be lowered.</h3>
+                    <blockquote> 
+                        <strong>Impact summary</strong> <br/>
+                        The streamlined rate review process resulted in a <strong>33% (14mins)</strong> reduction in call time. Feedback from CSAs indicated that the new workflow improved confidence and efficiency, reflected in the <strong>+80 eNPS score.</strong> We won <a href="https://www.linkedin.com/posts/dojo-tech_customerservice-lifeatdojo-awards-activity-7267576580657364993-IBqc?utm_source=share&utm_medium=member_desktop" target="_blank">Gold at the European Contact Centre & Customer Service Awards (ECCCSA)</a> for the <strong>Greatest Impact of AI!</strong> 🎉</blockquote>
                     <div class="img-bg">
                         <div class="img-detail-2">
                         <img src="images/rate1.png" />
@@ -63,22 +65,25 @@
                     </div>
                     </div>
                     <h2 id="overview">Problem space</h2>
-                    <p>The existing rate review process was highly manual and time-intensive. On average, customer service agents (CSAs) spent approximately 43 minutes on the phone navigating multiple spreadsheets to complete a rate review with a customer. This constituted 18% of all customer contact at Dojo.</p>
+                    <p>The existing rate review process was highly manual and time-intensive. On average, customer service agents (CSAs) spent approximately <strong>43 minutes on the phone, navigating multiple spreadsheets</strong> to complete a rate review with a customer. This constituted 18% of all customer contact at Dojo.</p>
                     <blockquote>Customer frustrations about long phone times were consistently highlighted during discovery interviews with customer service agents (CSAs), further emphasising the need for improvement.</blockquote>
                     <div style="width: 90vw;margin-left: -45vw;" class="img-bg">
-                            <img alt="Typical user journey of a CSA when completing a rate review on the phone with a customer" style="box-shadow: none;" src="images/blueprint.png" />
+                            <img alt="Typical user journey of a CSA when completing a rate review on the phone with a customer" style="box-shadow: none;" src="images/blueprint.png" /> 
                     </div>
-                    <h2 id="">Building empthany</h2>
-                    <p>Advisor job satisfaction is extremely important to us. We want to ensure the tools they use are streamlined & easy to use so that they instantly feel comfortable when on the phone with customers. This helps them serve our customers quickly & efficiently. To achieve this, my squad runs a continuous discovery initiative in the support center, dedicating time each week to one-on-one and group sessions with CSAs to uncover problems and test ideas. </p>
+                    <p><strong>The service blueprint exercise highlighted</strong> the friction created when advisors were navigating many systems trying to provide the customer with better rates.</p>
+                    
+                    <h2 id="">Building empathy</h2>
+                    <p>Advisor job satisfaction is extremely important to us. We want to ensure the tools they use are streamlined & easy to use so that they instantly <strong>feel comfortable when on the phone with customers.</strong> This helps them serve our customers quickly & efficiently. To achieve this, we run a continuous discovery initiative in the support center, dedicating time each week to one-on-one and group sessions with CSAs to uncover problems and test ideas.</p>
                     <h2 id="">Discovery & focus areas</h2>
-                    <p>We began with a kickoff discovery workshop involving stakeholders from customer service, product, and engineering. I used insights from initial discovery interviews to map out the processes involved with completing a rate review and asked participants to note down any pain points they had. I then grouped these into themed painpoints and plotted them on the user journey maps.</p>
+                    <p>We began with a kickoff discovery workshop involving stakeholders from customer service, product, and engineering. I used insights from initial discovery interviews to map out the processes involved with completing a rate review, asking participants to note down any pain points they had framed by a How Might We statement.</p>
+                    <p><strong>How might we maximise efficiency when actioning a Rate Reviews, reducing Service-Time (AHT) and maximising Life-time Value (LTV).</strong></p>
                     <div style="width: 90vw;margin-left: -45vw;" class="img-bg">
                             <img alt="User flow with post it notes as a result of workshop exercise with product, customer service and engineering. Post it notes highliht, slow process, usability, validation, approval and customer frustration as key areas." style="box-shadow: none;" src="images/workshop.png" />
                     </div>
                     <p>Insights from this workshop, combined with further discovery and call data analysis, helped us prioritise focus areas in the rate review process. We identified two main areas for improvement:</p>
-                    <div class="row"> <strong>Finding the best rates:</strong> The process of determining optimal rates for both customers and the business was cumbersome and inefficient. Advisors had to navigate multiple spreadsheets/systems, which added unnecessary complexity and negatively impacted the user experience. Our <strong>Hypothesis</strong> was that if we can simplify the the process of reviewing a customers rates, we'll reduce call time and improve eNPS.
+                    <div class="row"> <strong>Finding the best rates:</strong> The process of determining optimal rates for both customers and the business was cumbersome and inefficient. Advisors had to navigate multiple spreadsheets/systems, which added unnecessary complexity and negatively impacted the user experience. <br/><strong>Our hypothesis</strong> was that if we can simplify the the process of reviewing a customers rates, we'll reduce call time and improve eNPS.
                     </div>
-                    <div class="row"> <strong>Note taking after the call:</strong> Advisors spent, on average, 45% of their time manually summarising calls. This resulted in inconsistent notes, ranging from extensive detail to minimal information and confusion and inefficiency in understanding prior interactions. Our <strong>Hypothesis</strong> was that if we can simplify the process of manually taking notes, we'd reduce the overall handling time of tickets 
+                    <div class="row"> <strong>Note taking after the call:</strong> Advisors spent, on average, 45% of their time manually summarising calls. This resulted in inconsistent notes, ranging from extensive detail to minimal information and confusion and inefficiency in understanding prior interactions.<br/><strong>Our Hypothesis</strong> was that if we can simplify the process of manually taking notes, we'd reduce the overall handling time of tickets 
                     </div>
                     <h2>Early iterations</h2>
                     <p>Once we gathered the requirements for the data to be displayed, I experimented with various page layouts and table designs to present the datasets effectively. Our key design principle was to ensure users could quickly understand the data, enabling them to make timely rate amendment recommendations to the customer. To help achieve this, we focused on simplifying information hierarchy, reducing cognitive load with pre-populated rate options, and surfacing key data at a glance.</p>
