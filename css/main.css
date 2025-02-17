@@ -14,7 +14,6 @@ dl, dd, ol, ul, li, figure {
     p > a:visited, blockquote > a:visited, pre > a:visited, hr > a:visited,
     dl > a:visited, dd > a:visited, ol > a:visited, ul > a:visited, li > a:visited, figure > a:visited {
       color: #036084; }
-
 h1 {
   font-size: 2.5em;
   font-weight: 500 !important; }
