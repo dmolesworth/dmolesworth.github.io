@@ -71,7 +71,7 @@
                     <p>Advisor job satisfaction is extremely important to us. We want to ensure the tools they use are streamlined & easy to use so that they instantly <strong>feel comfortable when on the phone with customers.</strong> This helps them serve our customers quickly & efficiently. To achieve this, we run a continuous discovery initiative in the support center, dedicating time each week to one-on-one and group sessions with CSAs to uncover problems and test ideas.</p>
                     <h2 id="">Discovery & focus areas</h2>
                     <p>We began with a kickoff discovery workshop involving stakeholders from customer service, product, and engineering. I used insights from initial discovery interviews to map out the processes involved with completing a rate review, asking participants to note down any pain points they had framed by a How Might We statement.</p>
-                    <p><strong>How might we maximise efficiency when actioning a Rate Reviews, reducing Service-Time (AHT) and maximising Life-time Value (LTV).</strong></p>
+                    <p><strong>How might we maximise efficiency when actioning a Rate Reviews, reducing Call-Time and maximising NPS/CSAT and eNPS.</strong></p>
                     <div style="width: 90vw;margin-left: -45vw;" class="img-bg">
                             <img alt="User flow with post it notes as a result of workshop exercise with product, customer service and engineering. Post it notes highliht, slow process, usability, validation, approval and customer frustration as key areas." style="box-shadow: none;" src="images/workshop.png" />
                     </div>
@@ -81,29 +81,31 @@
                     <div class="row"> <strong>Note taking after the call:</strong> Advisors spent, on average, 45% of their time manually summarising calls. This resulted in inconsistent notes, ranging from extensive detail to minimal information and confusion and inefficiency in understanding prior interactions.<br/><strong>Our Hypothesis</strong> was that if we can simplify the process of manually taking notes, we'd reduce the overall handling time of tickets 
                     </div>
                     <h2>Early iterations</h2>
-                    <p>Once we gathered the requirements for the data to be displayed, I experimented with various page layouts and table designs to present the datasets effectively. Our key design principle was to ensure users could quickly understand the data, enabling them to make timely rate amendment recommendations to the customer. To help achieve this, we focused on simplifying information hierarchy, reducing cognitive load with pre-populated rate options, and surfacing key data at a glance.</p>
+                    <p>Once we gathered the requirements for the data to be displayed, I experimented with various page layouts and table designs to present the datasets effectively. We wanted to ensure users could quickly understand the data, enabling them to make timely rate amendment recommendations to the customer.</p>
                      <div class="img-bg">
                     <div class="img-detail-2">
                         <img src="images/iteration1.png" />
+                        <p>Layout where data tables were arranged in card overlays to improve usability on smaller screens.</p>
                     </div>
                     <div class="img-detail-2">
                         <img src="images/iteration2.png" />
+                        <p>Experimenting with different way data could be shown and hidden to reduce noise.</p>
+
                     </div>
                     </div>
                     <h2 id="">Prototyping & testing</h2>
                     <p>To improve the process of <strong>finding the best rates</strong>, we conducted weekly discovery sessions with CSAs to validate hypotheses and gather feedback on prototypes. Key findings included:</p>
                     <ul>
-                        <li><strong>Advisors struggled to digest the large amounts of data presented.</strong> So we redesigned the layout to prioritize the most critical rate data upfront, reducing visual clutter and introducing better hierarchy for easier scanning.</li>
-                        <li>Advisors often relied on zooming and keyboard shortcuts in spreadsheets, highlighting the importance of this functionality in the tool.</li>
+                        <li><strong>Advisors struggled to digest the large amounts of data presented.</strong> So we introduced a tabbed layout to prioritize the most critical rate data upfront, reducing visual clutter and introducing better hierarchy for easier scanning.</li>
+                        <li>Advisors often relied on <strong>zooming and keyboard shortcuts</strong> in spreadsheets, highlighting the importance of this functionality in the tool.</li>
                     </ul>
-                    <p>We focused on improving usability by addressing these points.</p>
                     <div class="img-bg">
                     <div class="img-detail-2">
-                        <img src="images/zoom.png" />
+                        <img style="box-shadow:none;" src="images/focus.png" />
                         <p>We ensured the data table was easily navigatable using keyboard input for increased usability when moving between different rates.</p>
                     </div>
                     <div class="img-detail-2">
-                        <img src="images/focus.png" />
+                        <img style="box-shadow:none;" src="images/zoom.png" />
                         <p>We added tabs to break up the rates and fees into categories instead of one long list, adding 'High impact' rates in one place meant CSAs could see where the customer was being charged the most.</p>
                     </div>
                     </div>
@@ -114,16 +116,28 @@
                     </ul>
                     <div class="img-bg">
                         <div class="img-detail-2">
-                        <img src="images/acrosslocation.png" />
-                        <p>Savings across locations.</p>
+                        <img style="box-shadow:none;" src="images/acrosslocation.png" />
+                        <p>Savings across locations to speed up explaining savings.</p>
                     </div>
                     <div class="img-detail-2">
-                        <img src="images/packages.png" />
-                        <p>Rate plan packages.</p>
+                        <img style="box-shadow:none;" src="images/packages.png" />
+                        <p>Rate plan packages to make finding the best rates quicker.</p>
                     </div>
                     </div>
+                    <p>During our initial discovery activities, <strong>we identified friction in the process of getting approval from a manager</strong> for particularly low rates. This was another area of functionality we focused on to make time saving efficiencies.</p>
+                     <ul>
+                        <li>The CSA would be alerted when the rates they suggested needed approving by a manager and would be prompted to send a link to their rate plan to a manager</li>
+                        <li>The manager could view the rates in real time and approve them to allow the CSA to lower the rates for the customer.</strong></li>
+                    </ul>
+                    <div class="img-bg">
+                        <div>
+                            <p><img style="box-shadow: none;" src="images/approval.png" /></p>
+                        </div>
+                    </div>
+                    <h2 id="">Beta release</h2>
                     <p>We launched the first iteration of the tool to a small group of beta testers before rolling it out to the entire contact centre.</p>
                     <blockquote>Part of our initial discovery and rollout research was to sit in on calls with customers to observe CSAs using the tool in a real setting. This allowed us to address points of friction quicker and with more confidence.</blockquote>
+                     <p>We released the rate review tool in different stages in order to deliver value to our users and the business more quickly. <strong>The below image shows the first full release of the tool;</strong></p>
                     <div class="img-bg">
                         <div class="img-detail-2">
                         <img src="images/rate1.png" />
@@ -164,11 +178,14 @@
                     <strong>Outcome</strong>
                     <p>Adoption increased as CSAs gained confidence in the AI summaries.</p>
                     <div class="img-bg">
-                        <div class="img-detail-2">
-                        <img style="border-radius: 16px; width:450px; float: right;" src="images/aihelp.png" />
+                        <div class="img-detail-3">
+                        <img style="border-radius: 16px; width:450px; float: right;" src="images/ai1.png" />
                     </div>
-                    <div class="img-detail-2">
-                        <img style="border-radius: 16px;width:450px;" src="images/edithelp.png" />
+                    <div class="img-detail-3">
+                        <img style="border-radius: 16px;width:450px;" src="images/ai2.png" />
+                    </div>
+                    <div class="img-detail-3">
+                        <img style="border-radius: 16px;width:450px;" src="images/ai3.png" />
                     </div>
                     </div>
                     <h2 id="">Learnings & Challenges</h2>
