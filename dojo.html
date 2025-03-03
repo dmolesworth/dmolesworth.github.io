@@ -83,13 +83,18 @@
                     <h2>Early testing</h2>
                     <p>Once we gathered the requirements for the data to be displayed, I experimented with various page layouts and table designs to present the datasets effectively. We wanted to ensure users could quickly understand the data, enabling them to make timely rate amendment recommendations to the customer.</p>
                      <div class="img-bg">
-                    <div class="img-detail-2">
+                    <div class="img-detail-3">
                         <img src="images/iteration1.png" />
                         <p>Layout where data tables were arranged in card overlays to improve usability on smaller screens.</p>
                     </div>
-                    <div class="img-detail-2">
+                    <div class="img-detail-3">
                         <img src="images/iteration2.png" />
                         <p>Experimenting with different way data could be shown and hidden to reduce noise.</p>
+
+                    </div>
+                    <div class="img-detail-3">
+                        <img src="images/iteration3.png" />
+                        <p>Testing different button placement to enhance usability.</p>
 
                     </div>
                     </div>
@@ -124,6 +129,9 @@
                         <p>Rate plan packages to make finding the best rates quicker.</p>
                     </div>
                     </div>
+                    <h2 id="">Challenges</h2>
+                     <p><strong>Rate plan packages were not used as expected,</strong> CSAs would often start with a custom plan because every customer is different and packages were too rigid. We decided to roll out an update to disable the package functionality, allowing CSAs to start with a completely custom plan, which also reduced the amount of noise on the page.</p>
+                     <h2>Feature refinement</h2>
                     <p>During our initial discovery activities, <strong>we identified friction in the process of getting approval from a manager</strong> for particularly low rates. This was another area of functionality we focused on to make time saving efficiencies.</p>
                      <ul>
                         <li>The CSA would be alerted when the rates they suggested needed approving by a manager and would be prompted to send a link to their rate plan to a manager</li>
@@ -141,13 +149,25 @@
                     <div class="img-bg">
                         <div class="img-detail-2">
                         <img src="images/rate1.png" />
+                        <p>CSAs could interact with invoice data in real-time, visualizing the impact of rate changes on both the customer and Dojo</p>
                     </div>
                     <div class="img-detail-2">
                         <img src="images/rate2.png" />
+                        <p>Summary presentation of changes made in the previous screen</p>
+
                     </div>
                     </div>
-                     <h2 id="">Challenges</h2>
-                     <p>Rate plan packages were not used as expected, CSAs would often start with a custom plan because every customer is different and packages were too rigid. We decided to roll out an update to disable the package functionality, allowing CSAs to start with a completely custom plan, which also reduced the amount of noise on the page.</p>
+                    <div class="img-bg">
+                        <div class="img-detail-2">
+                        <img src="images/validation.png" />
+                        <p>Validation to ensure rates were not lowered below predefined boundaries</p>
+                    </div>
+                    <div class="img-detail-2">
+                        <img src="images/approval1.png" />
+                        <p>Implemented process for gaining approval for certain rates</p>
+
+                    </div>
+                    </div>
                      <hr/>
                     <h2 id="">Introducing AI Call Summaries</h2>
                     <p>To tackle the note-taking problem, <strong>we explored leveraging AI to automate call summaries.</strong> We began by designing various summary formats, experimenting with combinations of headings, bold text, bullet points, and paragraphs to make the summaries clear and structured. These formats were tested with CSAs to identify the most effective approach.</p>
@@ -178,19 +198,13 @@
                     <strong>Outcome</strong>
                     <p>Adoption increased as CSAs gained confidence in the AI summaries.</p>
                     <div class="img-bg">
-                        <div class="img-detail-3">
-                        <img style="border-radius: 16px;" src="images/ai1.png" />
-                        <p>Once the call had ended, the AI summary appeared in an dialogue overlay →</p>
-                    </div>
-                    <div class="img-detail-3">
-                        <img style="border-radius: 16px;" src="images/ai2.png" />
-                        <p>The CSA was then given the opportunity to edit the summary →</p>
-                    </div>
-                    <div class="img-detail-3">
-                        <img style="border-radius: 16px;" src="images/ai3.png" />
-                        <p>The summary could then be submitted to the Zendesk ticket</p>
+                    <div style="padding: 32px 32px 0px 32px;" class="img-detail-1">
+
+                        <img style="box-shadow: none;" src="images/aisummary.png" />
+                        
                     </div>
                     </div>
+                     <p>Once the call had ended, the AI summary appeared in an dialogue overlay → The CSA was then given the opportunity to edit the summary → The summary could then be submitted to the Zendesk ticket</p>
                     <h2 id="">Learnings & Challenges</h2>
                     <p><strong>AI as an Assistant, Not a Replacement:</strong> Human intervention was still necessary when the LLM produced incorrect summaries.</p>
                     <p><strong>Behavioural changes:</strong> CSAs flagged missing details but accepted that the AI captured the most critical aspects of calls. However, some advisors adjusted their speech to ensure certain points were included in the summary.</p>
