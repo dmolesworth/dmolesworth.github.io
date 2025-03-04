@@ -52,47 +52,105 @@
             <div class="post">
                 <article class="post-content">
                     <h1 id="">Growing a cycling community</h1>
-                    <h3>Global Cycling Network (GCN) is the world’s largest online cycling channel, and the GCN app is for anyone interested in the world of cycling. </h3>
-                    <p>The app has 2 core offerings, a live racing, on-demand films & documentary streaming service. The app is also a place to share and interact with a wide range of cycling content and other cycling enthusiasts. Below are two projects I worked on in these areas;</p>
-                    <br/>
-
-
-                    <h6>Shortcuts:</h6>
-
-                    <ul class="shortcuts-list">
-                        <li class="shortcuts">
-                          <a class="shortcuts-link" href="#gcn">
-                            <h3>Growing community in the GCN app</h3>
-                            <p>Improving the connectivity of the app user base to increase monthly active users.</p>
-                          </a>
-                        </li>
-
-                        <li class="shortcuts">
-                          <a class="shortcuts-link" href="#launching">
-                            <h3>Launching a streaming service</h3>
-                            <p>Educating users on GCN+, our new on-demand films & documentary streaming service</p>
-                          </a>
-                        </li>
-                    </ul>
+                    <h3>Global Cycling Network (GCN) is the world’s largest online cycling channel. The GCN app is a hub for cycling enthusiasts, offering news, videos, live racing, feature films, and a community for cyclists.</h3>
                     <div style="background-color: #fff;" class="img-bg">
                             <img alt="" style="box-shadow: none;" src="images/plus.png" />
                     </div>
                     <h2>Problem space</h2>
-                    <p>The GCN app social experience does not have product-market fit. Our users are not following each other, and we are not delivering a value proposition around following that encourages users to do it. Our users cannot find real-world friends, and cannot easily make new connections by finding people with similar interests.</p>
+                    <p>The GCN app’s social experience lacks product-market fit. Users who come to watch races don’t stay, with week-one retention averaging just 16%.</p> <p>New users currently have no control over the content they see on day one, making engagement difficult. To improve retention, we need to refine the user experience and surface more relevant content from the start.</p>
+                    <p><strong>How might we make our app experience more relevant & engaging for new users?</strong></p>
+
                     <p><img style="box-shadow: none;" class="standard" src="images/retention.png" /></p>
-                    <blockquote><strong>Our hypothesis</strong> is that by improving the connectivity of the user base (by increasing the avg number of followers people have) will mean users see content that is more relevant to them. This will lead to a more personalised & valuable app experience and higher retention rates for new users.</blockquote>
-                    <h2 id="">Research</h2>
-                    <p>Working with the UX research team & analysing previous user interviews as well as feature requests & support tickets, we discovered that <strong>users were struggling to find other users and content in the app.</strong></p>
-                    <p>Compared to other issues, a way to search content was the most reported issue in our feedback tracker. With the upcoming launch of our films and live race streaming service, a search feature was also a strong strategic move to improve the product, allowing users to find not only users, but video content as well.</p>
-                    <hr />
-                    <p><img style="box-shadow: none;" class="standard" src="images/featurerequest.png" /></p>
-                    <hr />
-                    <p>I worked closely with product and engineering teams to agree on a high level flow and information architecture for the search feature, so that we were aligned on functionality before I went into prototyping and testing with users.</p>
-                    <p><img style="box-shadow: none;" class="standard" src="images/searchflow.png" /></p>
-                    <h2 id="">Testing prototypes</h2>
-                    <p>I produced an initial prototype to use in moderated user testing with Figma Mirror to create a realistic native experience. Participants were given the tasks to complete using the prototype, whilst i observed and asked follow-up questions. Testing was focused on navigation and layout of search results to gather feedback on proposed information architecture.</p>
-                    <p><img style="box-shadow: none;" class="standard" src="images/wires.png" /></p>
-                    <p><img style="box-shadow: none;" class="standard" src="images/testing.png" /></p>
+                    
+                    <strong>Measures of success</strong>
+                    <p>Users gain a clearer/quicker understanding of the product's value proposition. Users are retained more easily meaning a larger user base to convert to paying subscribers</p>
+                    <ul>
+                        <li>Increase week 1 retention</li>
+                        <li>Increase MAU</li>
+                    </ul>
+                    <h2 id="">Existing new user journey</h2>
+                    <p><img style="box-shadow: none;" class="standard" src="images/oldflow.png" /></p>
+                    <p>The existing new user experience was suboptimal, overwhelming users with cycling content that may not have been relevant to them, ultimately giving them little reason to return;</p>
+                    <ol>
+                        <li>Downloads app</li>
+                        <li>Lands on Home page</li>
+                        <li>Watches live/on-demand content or completes other job</li>
+                        <li>Exits app</li>
+                    </ol>
+                    
+                    <h2 id="">Team ideation</h2>
+                    <p>I ran sessions with the team and stakeholders to explore ways to <strong>improve the new user experience from day one,</strong> with the goal of increasing retention.</p>
+                    <div style="background-color: #fff;" class="img-bg">
+                            <img alt="" style="box-shadow: none;" src="images/wireframe.png" />
+                    </div>
+                    <p>Following the ideation sessions, I developed a user testing plan to validate our initial prototypes. This involved defining key research objectives, selecting test participants, and designing scenarios to assess how new users interacted with the proposed improvements.</p> <p><strong>The goal was to gather actionable insights</strong> on whether these changes made the app experience more engaging and relevant from day one. </p>
+                    <h2 id="">Hypotheses to validate</h2>
+                    <ol>
+                        <li><strong>Giving users the opportunity to tell us what they’re interested in</strong> will result in a more engaging experience because the content they see will be more relevant to them from day one </li>
+                        <li><strong>Allowing users to follow brands & High Quality Contributors</strong> when they first visit the app will result in more relevant engaging content from day one</li>
+                        <li><strong>By changing the home page experience to display relevant, user-selected tags,</strong> we aim to make the content in the home feed feel more personalized and engaging to each user.</li>
+                    </ol>
+                    <div class="img-bg">
+                        <div style="width:75%;" class="img-detail-1">
+                            <p><img style="box-shadow: none;" class="standard" src="images/v1.png" /></p>
+                            <p>v1 prototype used for early user testing</p>
+                        </div>
+                    </div>
+                    <h2>Learnings: Making selections</h2>
+                    <ul>
+                    <li><p>Users felt like they would be “trapped” in their initial selections without any way to undo. </br><strong>So we removed 'What brings you to GCN' screen and added copy to interests selection to reassure that interests could be edited</strong></p></li>
+                    <li><p>Users were hesitant when they reached the interests screen, unsure of what to do. </br><strong>So we added icons to the interests to make the selections more intuitive</strong></p></li>
+                    </ul>
+                    <div class="img-bg">
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/interests1.png" />
+                        <p>Used hashtags promote idea of topics and following</p>
+                    </div>
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/interests2.png" />
+                        <p>Added icons to the interests to make the selections more intuitive</p>
+                    </div>
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/interests3.png" />
+                        <p>Loading screen allowed for app build as well as giving user indication of personalisation</p>
+                    </div>
+                    </div>
+                    <h2>Learnings: Following brands</h2>
+                    <ul>
+                    <li><p>We saw a lot of confusion and some negative sentiment on the “People” screen. Users didn’t know what following would do and suspected marketing tactics from brands. </br><strong>We decided to introduce this content later in the journey. By embedding brand following into the home page feed, users could better understand the type of content available to them.</strong></p></li>
+                    </ul>
+                    <div class="img-bg">
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/following1.png" />
+                        <p>User had profiles suggested to them based on their interest selections</p>
+                    </div>
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/following2.png" />
+                        <p>They were able to follow profiles which added the profiles content to the users Home feed</p>
+                    </div>
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/following3.png" />
+                        <p>Users were able to navigate to profiles to explore their content further</p>
+                    </div>
+                    </div>
+                    <h2>Learnings: Managing interests</h2>
+                    <ul>
+                    <li><p>During user testing we learnt very quickly that users wanted an obvious way to explore new interests but also an obvious way to manage existing intrests</br><strong>So we explored and tested a few different ideas around helping users manage their interests, eventually landing on managing and exploring interests as part of the search feature</strong></p></li>
+                    </ul>
+                    <div class="img-bg">
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/explore1.png" />
+                        <p>Early design of Explore tab in the feed</p>
+                    </div>
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/explore2.png" />
+                        <p>Allowing users to manage their interests as part of the search feature</p>
+                    </div>
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/explore3.png" />
+                        <p>Users could manage existing interests and search for new ones</p>
+                    </div>
+                    </div>
                     <h2 id="">Beta users</h2>
                     <p>As well as moderated user testing, we posted an unmoderated test link to our beta users to get additional insight and feedback on our prototype.</p>
                     <div class="img-bg">
@@ -100,54 +158,22 @@
                             <p><img style="box-shadow: none;" class="standard" src="images/beta.png" /></p>
                         </div>
                     </div>
-                    <p>After analysing the results of our initial testing, we found that participants were struggling to find the specific result they were looking for amongst the range of results that were returned. </p>
-                    <blockquote>Participants felt there should be a better way to narrow down and filter results more categorically. With this feedback in mind I updated the prototype to include result filtering.</blockquote>
-                    <h2 id="">Updated designs</h2>
+                    <p>We first rolled out the feature to our engaged beta users, who provided positive feedback along with areas for improvement. One of the themes of feedback was how users managed their interests. One user suggested, 'I think I’d manage these interests in my profile, so I could add and remove things in a central place</p>
                     <div class="img-bg">
-                    <div class="img-detail-4">
-                        <img class="mobile" src="images/search1.png" />
-                        <p>Users could access the search feature from the top app bar throughout the app</p>
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/final1.png" />
                     </div>
-                    <div class="img-detail-4">
-                        <img class="mobile" src="images/search2.png" />
-                        <p>Filters were used to allow more targeted search results</p>
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/final2.png" />
                     </div>
-                    <div class="img-detail-4">
-                        <img class="mobile" src="images/search3.png" />
-                        <p>'All' filter was added to give users a complete overview of their search for content across the entire app.</p>
-                    </div>
-                    <div class="img-detail-4">
-                        <img class="mobile" src="images/search4.png" />
-                        <p>The search feature allowed users to find other profiles and follow them with the aim to increase engagement.</p>
+                    <div class="img-detail-3">
+                        <img class="mobile" src="images/final3.png" />
                     </div>
                     </div>
-                    <h2 id="">Learnings</h2>
-                    <p>One key learning was that users expected more filtering options to narrow their searches. While our initial design focused on broad discovery, feedback showed that users wanted more precise controls. If I were to iterate further, I’d explore more advanced filtering and personalization options to make search results even more relevant. Additionally, our research confirmed that user-to-user search was highly valuable, which opens opportunities to further enhance social connectivity within the app.</p>
-                    <h2 id="">Impact & takeaways</h2>
-                    <p>Over the course of the quarter following the release of the initial search feature, <strong>the average number of followers for each active user in the GCN app increased by over 200%.</strong> We found that a significant portion of searches were for other users, indicating that search was directly addressing the discovery problem. User feedback also reinforced this, with several participants mentioning that they had been able to find and follow real-world friends for the first time. We also saw a 42% increase in social interactions (e.g., likes, comments), suggesting that improved discoverability led to greater engagement. While it’s too early to measure long-term retention impact, we plan to analyze this over the coming months.</p>
-                    <h2>Further initiatives</h2>
-                    <p>Following the release of the search feature, we refined, tested, and launched additional features to further drive engagement and new user sretention.</p>
-                    <strong>Onboarding</strong>
-                    <p>We introduced a streamlined onboarding flow, enabling users to select their interests from the start for a more personalized app experience.</p>
-                    <div style="background-color: #fff;" class="img-bg">
-                            <img alt="" style="box-shadow: none;" src="images/wireframe.png" />
-                    </div>
-                    <div class="img-bg">
-                    <div class="img-detail-4">
-                        <img class="mobile" src="images/onboard1.png" />
-                    </div>
-                    <div class="img-detail-4">
-                        <img class="mobile" src="images/onboard2.png" />
-                    </div>
-                    <div class="img-detail-4">
-                        <img class="mobile" src="images/onboard3.png" />
-                    </div>
-                    <div class="img-detail-4">
-                        <img class="mobile" src="images/onboard4.png" />
-                    </div>
-                    </div>
-                    <strong>Content discovery</strong>
-                    <p>Additionally, we enhanced the social feed by incorporating diverse content types, enabling users to discover relevant content more easily, explore their interests, and connect with other users.</p>
+                    <h2 id="">Impact</h2>
+                    <p><strong>We saw a 92% increase in week-one retention, rising from 16% to 31%.</strong> This improvement was accompanied by a correlated increase in monthly active users (exact figure TBC). However, despite these gains, both metrics remain below industry standards for week-one retention, highlighting the need for further iteration and optimization.</p>
+                    <p><strong>For future iterations, we enhanced the social feed by incorporating diverse content types.</strong> This allows users to discover relevant content more easily, explore their interests, and connect with others.</p>
+                    <p>We made these changes to better target and engage existing users, ensuring they can easily discover relevant content and deepen their connection with the app.</p>
                     <div class="img-bg">
                     <div class="img-detail-4">
                         <img class="mobile" src="images/disc1.png" />
@@ -162,28 +188,6 @@
                         <img class="mobile" src="images/disc4.png" />
                     </div>
                     </div>
-                    <hr/>
-                    <h1 id="launching">Launching GCN+</h1>
-                    <h3>GCN+ is Global Cycling Network’s live racing, on-demand films & documentary streaming service. This subscription service is available to purchase worldwide & view on web, mobile, tablet & smart TV. Prior to GCN+, the subscription only featured cycling racing and was branded Race Pass.</h3>
-                    <h2>Problem space</h2>
-                    <p>Despite the huge range of cycling races included in the Race Pass subscription, analysing app store reviews, survey data & user interviews with existing subscribers, the main <strong>theme of feedback was that it was difficult to understand which races were available to them in their country.</strong> <blockquote>When it came to the task of combining our racing and film content into the new GCN+ subscription, the challenge was how we fully educate users on our proposition so that they feel informed enough to subscribe?</blockquote></p>
-                    <h2>Research</h2>
-                    <p>We hosted Hotjar <strong>surveys on the existing Race Pass website, gaining feedback from users</strong> on the current state of the product and also recruiting test participants for unmoderated user testing of prototypes. I performed thematic analysis on this user feedback to gain a better understanding of the main pain points. I also began exploring how other streaming subscription services showcased the breadth of content they had on offer.</p>
-                    <p><img alt="" style="box-shadow: none;" src="images/analysis.png" /></p>
-                    <br/>
-                    <blockquote>"It would be helpful if it was easier to see what is / isn't available for me to watch"</blockquote>
-                    <p>The result of my intital research was that potential subscribers wanted to be clear on what films & races they could watch with their subscription package. Other streaming platforms such as Amazon Prime Video allowed users to explore content before being asked to subscribe.</p>
-                    <h2>Early design process</h2>
-                    <p>After working with stakeholders & product managers to define the problem space and requirements, I produced high level wireframes and user flows to share with engineering and product teams to get feedback on initial thinking.</p>
-                    <img alt="" style="box-shadow: none;" src="images/flow.png" />
-                    <h2>Testing prototypes</h2>
-                    <p>By sharing these prototypes with existing subscribers early on in the design process, we were able to gain feedback whether users felt informed enough to subscribe and identify any areas of friction in our subscribe & payment flows.</p>
-                    <div style="width: 90vw;margin-left: -45vw;" class="img-bg">
-                            <img alt="" style="box-shadow: none;" src="images/prototype.png" />
-                    </div>
-                    <p>Testing our prototype with users allowed us to validate our direction for the product. Users found exploration and subscription tasks easy but felt better categorisation of content and the ability to add titles to a personalised list would be beneficial.</p>
-                    <h2>Impact & takeaways</h2>
-                    <p>We launched GCN+ successfully across web, mobile & TV, <strong>surpassing subscriber targets by 50%.</strong> By continuously talking to users throughout the launch phase, we were able to further refine and prioritise further updates to the product.</p>
                     <hr/>
                     <h6>Explore other featured projects:</h6>
                     <ul class="post-list">
