@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Duncan Molesworth</title>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>GCN: Growing a cycling community | Duncan Molesworth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="canonical" href="http://localhost:4000/">
     <link rel="alternate" type="application/rss+xml" title="Steph Parrott" href="http://localhost:4000/feed.xml" />
@@ -33,31 +33,22 @@
     <header class="site-header">
         <div class="wrapper">
             <a class="site-title" href="index.html"><img src="images/logo.svg" alt="Duncan Molesworth"></a>
-            <nav class="site-nav">
-                <a href="#" class="menu-icon">
-                    <svg viewBox="0 0 18 15">
-                        <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
-                        <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
-                        <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
-                    </svg>
-                </a>
-            </nav>
         </div>
     </header>
     <div class="page-content">
         <div class="wrapper">
-            <div class="post">
+            <main class="post">
                 <article class="post-content">
                     <h1 id="">Growing a cycling community</h1>
                     <h3>Global Cycling Network (GCN) is the world’s largest online cycling channel. The GCN app is a hub for cycling enthusiasts, offering news, videos, live racing, feature films, and a community for cyclists.</h3>
                     <div class="img-bg white">
-                            <img class="no-shadow" alt="" src="images/plus.png" />
+                            <img class="no-shadow" alt="Collage of GCN+ original film posters, including Rwanda, Norseman and Patagonia, showing the range of content in the GCN app" src="images/plus.png" />
                     </div>
                     <h2>Problem space</h2>
                     <p>The GCN app’s social experience lacks product-market fit. Users who come to watch races don’t stay, with week-one retention averaging just 16%.</p> <p>New users currently have no control over the content they see on day one, making engagement difficult. To improve retention, we need to refine the user experience and surface more relevant content from the start.</p>
                     <p><strong>How might we make our app experience more relevant & engaging for new users?</strong></p>
 
-                    <p><img class="standard" src="images/retention.png" /></p>
+                    <p><img class="standard" src="images/retention.png" alt="Line chart of new user retention, dropping from 100% to 27% on day 1 and levelling off at 10% from day 7" /></p>
                     
                     <strong>Measures of success</strong>
                     <p>Users gain a clearer/quicker understanding of the product's value proposition. Users are retained more easily meaning a larger user base to convert to paying subscribers</p>
@@ -66,7 +57,7 @@
                         <li>Increase MAU</li>
                     </ul>
                     <h2 id="">Existing new user journey</h2>
-                    <p><img class="standard" src="images/oldflow.png" /></p>
+                    <p><img class="standard" src="images/oldflow.png" alt="Existing new user journey: App Store listing, GCN splash screen, then straight into a generic Home feed with no personalisation" /></p>
                     <p>The existing new user experience was suboptimal, overwhelming users with cycling content that may not have been relevant to them, ultimately giving them little reason to return;</p>
                     <ol>
                         <li>Downloads app</li>
@@ -78,7 +69,7 @@
                     <h2 id="">Team ideation</h2>
                     <p>I ran sessions with the team and stakeholders to explore ways to <strong>improve the new user experience from day one,</strong> with the goal of increasing retention.</p>
                     <div class="img-bg white">
-                            <img class="no-shadow" alt="" src="images/wireframe.png" />
+                            <img class="no-shadow" alt="Low-fidelity wireframe flow: pick a reason for using GCN, select interests, follow suggested profiles, then a Home feed filtered by interest" src="images/wireframe.png" />
                     </div>
                     <p>Following the ideation sessions, I developed a user testing plan to validate our initial prototypes. This involved defining key research objectives, selecting test participants, and designing scenarios to assess how new users interacted with the proposed improvements.</p> <p><strong>The goal was to gather actionable insights</strong> on whether these changes made the app experience more engaging and relevant from day one. </p>
                     <h2 id="">Hypotheses to validate</h2>
@@ -89,7 +80,7 @@
                     </ol>
                     <div class="img-bg">
                         <div class="img-detail-1 narrow">
-                            <p><img class="standard no-shadow" src="images/v1.png" /></p>
+                            <p><img class="standard no-shadow" src="images/v1.png" alt="Six screens: splash, What brings you to GCN, pick topics, suggested people to follow, personalising loader and Home feed" /></p>
                             <p>v1 prototype used for early user testing</p>
                         </div>
                     </div>
@@ -100,15 +91,15 @@
                     </ul>
                     <div class="img-bg">
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/interests1.png" />
+                        <img class="mobile" src="images/interests1.png" alt="Interests step 1: topic picker of hashtag chips, with copy saying choices can be changed later" />
                         <p>Used hashtags promote idea of topics and following</p>
                     </div>
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/interests2.png" />
+                        <img class="mobile" src="images/interests2.png" alt="Interests step 2: the same picker with four topics selected and the Save and continue button now active" />
                         <p>Added icons to the interests to make the selections more intuitive</p>
                     </div>
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/interests3.png" />
+                        <img class="mobile" src="images/interests3.png" alt="Interests step 3: red loading screen reading Personalising your experience" />
                         <p>Loading screen allowed for app build as well as giving user indication of personalisation</p>
                     </div>
                     </div>
@@ -118,15 +109,15 @@
                     </ul>
                     <div class="img-bg">
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/following1.png" />
+                        <img class="mobile" src="images/following1.png" alt="Following step 1: Home feed with a Suggested for you carousel of profiles to follow, below a gravel adventure post" />
                         <p>User had profiles suggested to them based on their interest selections</p>
                     </div>
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/following2.png" />
+                        <img class="mobile" src="images/following2.png" alt="Following step 2: the first suggested profile's button changes from Follow to Following" />
                         <p>They were able to follow profiles which added the profiles content to the users Home feed</p>
                     </div>
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/following3.png" />
+                        <img class="mobile" src="images/following3.png" alt="Following step 3: the followed rider's profile page with her bio, interest tags and latest post" />
                         <p>Users were able to navigate to profiles to explore their content further</p>
                     </div>
                     </div>
@@ -136,15 +127,15 @@
                     </ul>
                     <div class="img-bg">
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/explore1.png" />
+                        <img class="mobile" src="images/explore1.png" alt="Managing interests idea 1: feed with a new Explore tab beside Home and Shop, showing racing news posts" />
                         <p>Early design of Explore tab in the feed</p>
                     </div>
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/explore2.png" />
+                        <img class="mobile" src="images/explore2.png" alt="Managing interests idea 2: search sheet on the Interests filter, listing hashtags with followed ones ticked" />
                         <p>Allowing users to manage their interests as part of the search feature</p>
                     </div>
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/explore3.png" />
+                        <img class="mobile" src="images/explore3.png" alt="Managing interests idea 3: searching adventure shows the followed Adventure interest, 2.4k people posting and related posts" />
                         <p>Users could manage existing interests and search for new ones</p>
                     </div>
                     </div>
@@ -152,19 +143,19 @@
                     <p>As well as moderated user testing, we posted an unmoderated test link to our beta users to get additional insight and feedback on our prototype.</p>
                     <div class="img-bg">
                         <div class="img-detail-1">
-                            <p><img class="standard no-shadow" src="images/beta.png" /></p>
+                            <p><img class="standard no-shadow" src="images/beta.png" alt="Post in the GCN app's Beta feed inviting users to give feedback on search, next to the user search results design being tested" /></p>
                         </div>
                     </div>
                     <p>We first rolled out the feature to our engaged beta users, who provided positive feedback along with areas for improvement. One of the themes of feedback was how users managed their interests. One user suggested, 'I think I’d manage these interests in my profile, so I could add and remove things in a central place</p>
                     <div class="img-bg">
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/final1.png" />
+                        <img class="mobile" src="images/final1.png" alt="Final onboarding step 1: welcome screen reading Everything cycling, all in one place, with a Get started button" />
                     </div>
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/final2.png" />
+                        <img class="mobile" src="images/final2.png" alt="Final onboarding step 2: topic picker with Adventure, Films and Gravel selected" />
                     </div>
                     <div class="img-detail-3">
-                        <img class="mobile" src="images/final3.png" />
+                        <img class="mobile" src="images/final3.png" alt="Final onboarding step 3: Personalising your experience loading screen" />
                     </div>
                     </div>
                     <h2 id="">Impact</h2>
@@ -173,16 +164,16 @@
                     <p>We made these changes to better target and engage existing users, ensuring they can easily discover relevant content and deepen their connection with the app.</p>
                     <div class="img-bg">
                     <div class="img-detail-4">
-                        <img class="mobile" src="images/disc1.png" />
+                        <img class="mobile" src="images/disc1.png" alt="Home feed card inviting users to explore more topics through search, above a post from a followed rider" />
                     </div>
                     <div class="img-detail-4">
-                        <img class="mobile" src="images/disc2.png" />
+                        <img class="mobile" src="images/disc2.png" alt="Interests tab in search, where users tick hashtags to follow or unfollow them" />
                     </div>
                     <div class="img-detail-4">
-                        <img class="mobile" src="images/disc3.png" />
+                        <img class="mobile" src="images/disc3.png" alt="Home feed module prompting users to follow tags that interest them, with an Explore more link" />
                     </div>
                     <div class="img-detail-4">
-                        <img class="mobile" src="images/disc4.png" />
+                        <img class="mobile" src="images/disc4.png" alt="Suggested for you carousel in the Home feed recommending riders and brands to follow" />
                     </div>
                     </div>
                     <hr/>
@@ -194,19 +185,19 @@
                                     <div class="related-card-title">Unlocking a partner ecosystem</div>
                                     <div class="related-card-meta">Primer · 2025–Present</div>
                                 </div>
-                                <div class="related-card-media"><img src="images/primer-card.png" alt="Primer"></div>
+                                <div class="related-card-media"><img src="images/primer-card.png" alt=""></div>
                             </a>
                             <a class="related-card" href="dojo.html">
                                 <div class="related-card-body">
                                     <div class="related-card-title">Improving customer support experience</div>
                                     <div class="related-card-meta">Dojo · 2022–2025</div>
                                 </div>
-                                <div class="related-card-media" data-align="end"><img src="images/dojo-card.png" alt="Dojo"></div>
+                                <div class="related-card-media" data-align="end"><img src="images/dojo-card.png" alt=""></div>
                             </a>
                         </div>
                     </section>
 
-            </div>
+            </main>
         </div>
 </body>
 
